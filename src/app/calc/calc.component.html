@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3">
+  <div class="text-center bold">
+    <label> Simple Intrest Calculator</label>
+  </div>
+
+  <!-- <form name="formdata"> -->
+    <div>
+      <label> Principal Amount </label>
+      <input type="number" class="form-control" [(ngModel)]="principalamount" name="principalAmount" />
+    </div>
+
+    <div>
+      <label> Rate of Intrest </label>
+      <input type="number" class="form-control" [(ngModel)]="rate" name="rateofintrest" />
+    </div>
+
+    <div>
+      <label> Time (in Months) </label>
+      <input type="number" class="form-control" [(ngModel)]="months" name="months" />
+    </div>
+
+    <div class="margin-t-10">
+      <button class="btn btn-warning btn-block" (click)="calculate()"> Calculate SI </button>
+    </div>
+  <!-- </form> -->
+
+  <div class="margin-t-10">
+    <label> Simple Intrest </label>
+    <input type="text" class="form-control" [(ngModel)]="amount" name="amount" />
+  </div>
+
+  <label class="margin-t-10">
+    Amount: {{ totalamounts }}
+  </label>
+
+</div>
